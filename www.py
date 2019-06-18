@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
-from application import app
 
+'''
+蓝图功能，对所有的url进行蓝图功能配置
+'''
+from application import app
 from web.controllers.index import route_index
 from web.controllers.user.User import route_user
 from web.controllers.static import route_static
@@ -9,6 +12,7 @@ from web.controllers.account.Account import route_account
 from web.controllers.member.Member import route_member
 from web.controllers.finance.Finance import route_finance
 from web.controllers.stat.Stat import route_stat
+from web.controllers.api import router_api
 
 app.register_blueprint(route_index, url_prefix="/")
 app.register_blueprint(route_user, url_prefix="/user")
@@ -18,3 +22,9 @@ app.register_blueprint(route_food, url_prefix="/food")
 app.register_blueprint(route_member, url_prefix="/member")
 app.register_blueprint(route_finance, url_prefix="/finance")
 app.register_blueprint(route_stat, url_prefix="/stat")
+app.register_blueprint(router_api, url_prefix="/api")
+
+'''
+统一拦截处理和统一错误处理
+'''
+from web.interceptors.AuthInterceptor import *
