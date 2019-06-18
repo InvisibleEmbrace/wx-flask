@@ -1,8 +1,9 @@
 from flask import Blueprint
 
-router_api = Blueprint('api_page', __name__)
+route_api = Blueprint('api_page', __name__)
+from web.controllers.api.Member import *
 
 
-@router_api.route("/")
+@route_api.route("/")
 def index():
-    return "api"
+    return "Mina Api V1.0~~"

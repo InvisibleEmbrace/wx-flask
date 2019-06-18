@@ -27,3 +27,12 @@ STATUS_MAPPING = {
     "1": "正常",
     "0": "已删除"
 }
+
+# 小程序配置
+MINA_APP = {
+    'appid':'wxb7df269fc185eb47',
+    'appkey':'7799920c7617ac6060322ff30b420d3f',
+    'paykey':'xxxxxxxxxxxxxx换自己的',
+    'mch_id':'xxxxxxxxxxxx换自己的',
+    'callback_url':'/api/order/callback'
+}
