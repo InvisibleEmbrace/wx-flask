@@ -12,7 +12,6 @@ from common.libs.member.MemberService import MemberService
 
 @route_api.route("/member/login", methods=["GET", "POST"])
 def login():
-    print('使用了login方法')
     resp = {'code': 200, 'msg': '操作成功~', 'data': {}}
     req = request.values
     code = req['code'] if 'code' in req else ''

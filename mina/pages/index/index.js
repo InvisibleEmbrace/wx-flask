@@ -42,7 +42,6 @@ Page({
                     method: 'POST',
                     data: data,
                     success: function (res) {
-                        debugger
                         if (res.data.code != 200) {
                             app.alert({'content': res.data.msg});
                             return;
