@@ -30,9 +30,20 @@ STATUS_MAPPING = {
 
 # 小程序配置
 MINA_APP = {
-    'appid':'wxb7df269fc185eb47',
-    'appkey':'7799920c7617ac6060322ff30b420d3f',
-    'paykey':'xxxxxxxxxxxxxx换自己的',
-    'mch_id':'xxxxxxxxxxxx换自己的',
-    'callback_url':'/api/order/callback'
+    'appid': 'wxb7df269fc185eb47',
+    'appkey': '7799920c7617ac6060322ff30b420d3f',
+    'paykey': 'xxxxxxxxxxxxxx换自己的',
+    'mch_id': 'xxxxxxxxxxxx换自己的',
+    'callback_url': '/api/order/callback'
 }
+
+UPLOAD = {
+    'ext': ['jpg', 'gif', 'bmp', 'jpeg', 'png'],
+    'prefix_path': '/web/static/upload/',
+    'prefix_url': '/static/upload/'
+}
+
+APP = {
+    'domain':'http://127.0.0.1:8999'
+}
+
