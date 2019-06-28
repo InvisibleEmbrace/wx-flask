@@ -30,3 +30,5 @@ app.register_blueprint(route_upload, url_prefix="/upload")
 统一拦截处理和统一错误处理
 '''
 from web.interceptors.AuthInterceptor import *
+from web.interceptors.ApiAuthInterceptor import *
+from web.interceptors.ErrorInterceptor import *

@@ -16,7 +16,6 @@ from sqlalchemy import or_
 def foodIndex():
     resp = {'code': 200, 'msg': '操作成功~', 'data': {}}
     cat_list = FoodCat.query.filter_by(status=1).order_by(FoodCat.weight.desc()).all()
-
     data_cat_list = []
     data_cat_list.append({
         'id': 0,
@@ -63,6 +62,7 @@ def foodSearch():
     query = Food.query.filter_by(status=1)
     if cat_id > 0:
         query = query.filter_by(cat_id=cat_id)
+
     if mix_kw:
         rule = or_(Food.name.ilike("%{0}%".format(mix_kw)), Food.tags.ilike("%{0}%".format(mix_kw)))
         query = query.filter(rule)
