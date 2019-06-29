@@ -57,7 +57,7 @@ def info():
     resp_data = {}
     req = request.args
     id = int(req.get("id", 0))
-    reback_url = UrlManager.buidUrl("/food/index")
+    reback_url = UrlManager.buildUrl("/food/index")
 
     if id < 1:
         return redirect(reback_url)

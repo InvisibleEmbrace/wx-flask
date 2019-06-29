@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d564f57a-9f96-4262-9481-cacdf2b8445c" name="Default" comment="下拉加载菜品">
-      <change afterPath="$PROJECT_DIR$/common/libs/LogService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/controllers/api/Cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/interceptors/ApiAuthInterceptor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/interceptors/__init__.py" afterDir="false" />
+    <list default="true" id="d564f57a-9f96-4262-9481-cacdf2b8445c" name="Default" comment="购物车跳转结账">
+      <change afterPath="$PROJECT_DIR$/web/controllers/api/Order.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/libs/member/CartService.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/libs/member/CartService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/libs/member/MemberService.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/libs/member/MemberService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/food/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/food/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/food/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/food/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/api/Food.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/Food.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mina/pages/order/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/order/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/controllers/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/interceptors/AuthInterceptor.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/interceptors/AuthInterceptor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www.py" beforeDir="false" afterPath="$PROJECT_DIR$/www.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/food/Food.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/food/Food.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,108 +17,86 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mina/pages/food/index.js">
+        <entry file="file://$PROJECT_DIR$/mina/pages/order/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="1184">
+              <caret line="74" column="53" lean-forward="true" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/libs/member/CartService.py">
+        <entry file="file://$PROJECT_DIR$/common/libs/UrlManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/libs/member/MemberService.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="368">
+              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/controllers/api/Food.py">
+        <entry file="file://$PROJECT_DIR$/web/controllers/food/Food.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="102" column="19" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="19" />
+            <state relative-caret-position="227">
+              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/templates/food/info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="32" column="40" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="40" />
               <folding>
-                <element signature="e#24#65#0" expanded="true" />
+                <element signature="e#54#81#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mina/pages/food/info.js">
+        <entry file="file://$PROJECT_DIR$/manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="132" selection-start-line="132" selection-end-line="133" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="-103">
+              <caret line="1" column="27" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/controllers/api/Member.py">
+        <entry file="file://$PROJECT_DIR$/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="120" selection-start-line="120" selection-end-line="120" />
-              <folding>
-                <element signature="e#24#65#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="185">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mina/pages/food/index.wxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="50" column="84" lean-forward="true" selection-start-line="50" selection-start-column="84" selection-end-line="50" selection-end-column="84" />
-              <folding>
-                <element signature="n#style#0;n#view#2;n#view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#view#2;n#view#0;n#view#3;n#view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#view#1;n#view#2;n#view#0;n#view#3;n#view#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/mina/pages/food/info.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mina/pages/food/info.wxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="66" column="42" lean-forward="true" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/mina/pages/cart/index.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/controllers/api/Cart.py">
+        <entry file="file://$PROJECT_DIR$/mina/pages/cart/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="78" column="27" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/controllers/api/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="656">
+              <caret line="41" column="108" selection-start-line="41" selection-start-column="94" selection-end-line="41" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -142,16 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bu</find>
-      <find>set</find>
-      <find>wrap_food_set</find>
-      <find>buildImageUrl</find>
-      <find>编程</find>
-      <find>python</find>
-      <find>banners</find>
-      <find>globalData</find>
-      <find>getFoodList</find>
-      <find>searchInput</find>
       <find>has</find>
       <find>off</find>
       <find>limit</find>
@@ -170,8 +130,18 @@
       <find>购物车</find>
       <find>show-popup</find>
       <find>cart</find>
-      <find>hideShopPopup</find>
       <find>deb</find>
+      <find>cart_number</find>
+      <find>list</find>
+      <find>length</find>
+      <find>active</find>
+      <find>total</find>
+      <find>editTap</find>
+      <find>saveHidden</find>
+      <find>onsho</find>
+      <find>deleteSelected</find>
+      <find>hideShopPopup</find>
+      <find>express_address_id</find>
     </findStrings>
     <replaceStrings>
       <replace>ops_render</replace>
@@ -180,12 +150,15 @@
       <dir>D:\Workspace\Python\wx-flask\common</dir>
       <dir>D:\Workspace\Python\wx-flask\web\templates\food</dir>
       <dir>D:\Workspace\Python\wx-flask\web\templates</dir>
-      <dir>D:\Workspace\Python\wx-flask\web\controllers</dir>
       <dir>D:\Workspace\Python\wx-flask</dir>
       <dir>D:\Workspace\Python\wx-flask\web\static</dir>
       <dir>D:\Workspace\Python\wx-flask\mina\pages\index</dir>
       <dir>D:\Workspace\Python\wx-flask\mina</dir>
       <dir>D:\Workspace\Python\wx-flask\mina\pages\food</dir>
+      <dir>D:\Workspace\Python\wx-flask\mina\pages</dir>
+      <dir>D:\Workspace\Python\wx-flask\mina\wxParse</dir>
+      <dir>D:\Workspace\Python\wx-flask\web</dir>
+      <dir>D:\Workspace\Python\wx-flask\web\controllers</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -194,10 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/flask/app.py" />
-        <option value="$PROJECT_DIR$/manager.py" />
-        <option value="$PROJECT_DIR$/web/controllers/static.py" />
-        <option value="$PROJECT_DIR$/web/controllers/user/user.py" />
         <option value="$PROJECT_DIR$/web/controllers/account/account.py" />
         <option value="$PROJECT_DIR$/web/controllers/stat/Stat.py" />
         <option value="$PROJECT_DIR$/web/controllers/member/Member.py" />
@@ -227,13 +196,10 @@
         <option value="$PROJECT_DIR$/web/controllers/upload/Upload.py" />
         <option value="$PROJECT_DIR$/web/templates/food/set.html" />
         <option value="$PROJECT_DIR$/web/static/js/food/set.js" />
-        <option value="$PROJECT_DIR$/common/libs/UrlManager.py" />
         <option value="$PROJECT_DIR$/config/base_setting.py" />
-        <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/web/static/js/common.js" />
         <option value="$PROJECT_DIR$/mina/pages/my/index.js" />
         <option value="$PROJECT_DIR$/mina/app.js" />
-        <option value="$PROJECT_DIR$/web/controllers/food/Food.py" />
         <option value="$PROJECT_DIR$/mina/pages/food/index.js" />
         <option value="$PROJECT_DIR$/www.py" />
         <option value="$PROJECT_DIR$/common/libs/LogService.py" />
@@ -241,10 +207,17 @@
         <option value="$PROJECT_DIR$/common/libs/member/CartService.py" />
         <option value="$PROJECT_DIR$/common/libs/member/MemberService.py" />
         <option value="$PROJECT_DIR$/web/controllers/api/Cart.py" />
-        <option value="$PROJECT_DIR$/web/controllers/api/__init__.py" />
-        <option value="$PROJECT_DIR$/mina/pages/food/info.js" />
         <option value="$PROJECT_DIR$/mina/pages/food/index.wxml" />
         <option value="$PROJECT_DIR$/web/controllers/api/Food.py" />
+        <option value="$PROJECT_DIR$/mina/pages/cart/index.wxml" />
+        <option value="$PROJECT_DIR$/mina/pages/cart/index.js" />
+        <option value="$PROJECT_DIR$/mina/pages/food/info.js" />
+        <option value="$PROJECT_DIR$/web/controllers/api/Order.py" />
+        <option value="$PROJECT_DIR$/web/controllers/api/__init__.py" />
+        <option value="$PROJECT_DIR$/mina/pages/order/index.js" />
+        <option value="$PROJECT_DIR$/application.py" />
+        <option value="$PROJECT_DIR$/common/libs/UrlManager.py" />
+        <option value="$PROJECT_DIR$/web/controllers/food/Food.py" />
       </list>
     </option>
   </component>
@@ -265,8 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="WxProject" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,7 +253,47 @@
             <path>
               <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
               <item name="wx-flask" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wx-flask" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wx-flask" type="462c0819:PsiDirectoryNode" />
+              <item name="mina" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wx-flask" type="462c0819:PsiDirectoryNode" />
+              <item name="mina" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wx-flask" type="462c0819:PsiDirectoryNode" />
+              <item name="mina" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wx-flask" type="462c0819:PsiDirectoryNode" />
+              <item name="mina" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wx-flask" type="462c0819:PsiDirectoryNode" />
+              <item name="mina" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
@@ -306,12 +317,21 @@
               <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
               <item name="wx-flask" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptors" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wx-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wx-flask" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="food" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="WxProject" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -409,7 +429,9 @@
       <workItem from="1561551569158" duration="2432000" />
       <workItem from="1561604345707" duration="2860000" />
       <workItem from="1561633919961" duration="4831000" />
-      <workItem from="1561686523596" duration="8583000" />
+      <workItem from="1561686523596" duration="15081000" />
+      <workItem from="1561775850355" duration="14000" />
+      <workItem from="1561775938522" duration="1609000" />
     </task>
     <task id="LOCAL-00001" summary="后台管理界面和基本视图跳转">
       <created>1560616716377</created>
@@ -474,17 +496,30 @@
       <option name="project" value="LOCAL" />
       <updated>1561638846256</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="小程序菜品完成">
+      <created>1561701044741</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561701044741</updated>
+    </task>
+    <task id="LOCAL-00011" summary="购物车跳转结账">
+      <created>1561727110606</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1561727110606</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111931000" />
+    <option name="totallyTimeSpent" value="120052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21954484" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2248996" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -559,56 +594,15 @@
     <MESSAGE value="上传图片" />
     <MESSAGE value="菜品管理" />
     <MESSAGE value="下拉加载菜品" />
-    <option name="LAST_COMMIT_MESSAGE" value="下拉加载菜品" />
+    <MESSAGE value="小程序菜品完成" />
+    <MESSAGE value="购物车跳转结账" />
+    <option name="LAST_COMMIT_MESSAGE" value="购物车跳转结账" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/wx_flask$manager.coverage" NAME="manager Coverage Results" MODIFIED="1560877951891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/order$manager.coverage" NAME="manager Coverage Results" MODIFIED="1560581431781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/controllers/account/Account.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2272">
-          <caret line="149" column="53" lean-forward="true" selection-start-line="149" selection-start-column="53" selection-end-line="149" selection-end-column="53" />
-          <folding>
-            <element signature="e#24#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/libs/food/FoodService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/plugins/moment.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8371">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/plugins/ueditor/ueditor.parse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/plugins/ueditor/upload_config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1337">
-          <caret line="84" column="45" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/upload/20190621/5a51e24052f34531b8fa5ce51c500856.jpg" />
     <entry file="file://$PROJECT_DIR$/common/libs/UploadService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
@@ -659,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/libs/UrlManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/local_setting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -694,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/food/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="15" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mina/pages/my/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -722,13 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/controllers/food/Food.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -762,9 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mina/pages/food/info.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mina/pages/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -778,32 +748,8 @@
     <entry file="file://$PROJECT_DIR$/web/interceptors/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/interceptors/ApiAuthInterceptor.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="e#54#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/libs/LogService.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -832,16 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mina/pages/food/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/libs/member/CartService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -853,47 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/controllers/api/Member.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-          <folding>
-            <element signature="e#24#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mina/pages/food/info.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="66" column="42" lean-forward="true" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/controllers/api/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/controllers/api/Cart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="78" column="27" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mina/pages/food/info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="132" selection-start-line="132" selection-end-line="133" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -912,10 +807,146 @@
     <entry file="file://$PROJECT_DIR$/web/controllers/api/Food.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="19" />
+          <caret line="102" column="75" lean-forward="true" selection-start-line="102" selection-start-column="75" selection-end-line="102" selection-end-column="75" />
           <folding>
             <element signature="e#24#65#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/food/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="93" column="18" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/controllers/api/Cart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/controllers/api/Member.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+          <folding>
+            <element signature="e#24#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/food/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2896">
+          <caret line="182" column="25" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/controllers/api/Order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="e#24#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/controllers/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/order/index.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/food/info.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="62" column="52" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/cart/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/food/info.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/cart/index.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/cart/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="41" column="108" selection-start-line="41" selection-start-column="94" selection-end-line="41" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/order/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1184">
+          <caret line="74" column="53" lean-forward="true" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="40" />
+          <folding>
+            <element signature="e#54#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/food/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/libs/UrlManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/controllers/food/Food.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
         </state>
       </provider>
     </entry>
