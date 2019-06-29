@@ -9,7 +9,7 @@ Page({
         pay_price: "0.00",
         total_price: "0.00",
         params: null,
-        express_address_id:0
+        express_address_id: 0
     },
     onLoad: function (e) {
         var that = this;
@@ -19,7 +19,7 @@ Page({
     },
     onShow: function () {
         var that = this;
-         this.getOrderInfo();
+        this.getOrderInfo();
     },
     createOrder: function (e) {
         wx.showLoading();
@@ -84,13 +84,40 @@ Page({
                     total_price: resp.data.total_price,
                 });
 
-                if( that.data.default_address ){
+                if (that.data.default_address) {
                     that.setData({
-                         express_address_id: that.data.default_address.id
+                        express_address_id: that.data.default_address.id
                     });
                 }
             }
         });
-    }
+    },
+    createOrder: function (e) {
+        wx.showLoading();
+        var that = this;
+        var data = {
+            type: this.data.params.type,
+            goods: JSON.stringify(this.data.params.goods),
+            express_address_id: that.data.default_address.id
+        };
+        wx.request({
+            url: app.buildUrl("/order/create"),
+            header: app.getRequestHeader(),
+            method: 'POST',
+            data: data,
+            success: function (res) {
+                wx.hideLoading();
+                var resp = res.data;
+                if (resp.code != 200) {
+                    app.alert({"content": resp.msg});
+                    return;
+                }
+                wx.navigateTo({
+                    url: "/pages/my/order_list"
+                });
+            }
+        });
+
+    },
 
 });

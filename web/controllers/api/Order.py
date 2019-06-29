@@ -10,6 +10,7 @@ from common.libs.Helper import getCurrentDate
 from common.libs.member.CartService import CartService
 from common.models.member.MemberAddress import MemberAddress
 from common.models.member.OauthMemberBind import OauthMemberBind
+from common.libs.pay.PayService import PayService
 
 
 @route_api.route("/order/info", methods=["POST"])
@@ -54,4 +55,32 @@ def orderInfo():
     resp['data']['yun_price'] = str(yun_price)
     resp['data']['total_price'] = str(pay_price + yun_price)
     resp['data']['default_address'] = default_address
+    return jsonify(resp)
+
+
+@route_api.route("/order/create", methods=["POST"])
+def orderCreate():
+    resp = {'code': 200, 'msg': '操作成功~', 'data': {}}
+    req = request.values
+    type = req['type'] if 'type' in req else ''
+    note = req['note'] if 'note' in req else ''
+    params_goods = req['goods'] if 'goods' in req else None
+
+    items = []
+    if params_goods:
+        items = json.loads(params_goods)
+
+    if len(items) < 1:
+        resp['code'] = -1
+        resp['msg'] = "下单失败：没有选择商品~~"
+        return jsonify(resp)
+
+    member_info = g.member_info
+    target = PayService()
+    params = {}
+    resp = target.createOrder(member_info.id, items, params)
+
+    if resp['code'] == 200 and type == "cart":
+        CartService.deleteItem(member_info.id, items)
+
     return jsonify(resp)
